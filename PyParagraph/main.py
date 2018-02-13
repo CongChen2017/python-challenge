@@ -49,13 +49,6 @@ for filename in fileNames:
 	# print out sentence count
 	print("Approximate Sentence Count: " + str(len(sentence)-1))
 
-	# generate list of alphabets
-
-	Alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 
-	            'g', 'h', 'i', 'j', 'k', 'l', 
-	            'm', 'n', 'o', 'p', 'q', 'r', 
-	            's', 't', 'u', 'v', 'w', 'x', 
-	            'y', 'z']
 
 	# initiate a list of letters
 
@@ -65,7 +58,7 @@ for filename in fileNames:
 
 	for char in list(paragraph):
 
-		if char in Alphabet:
+		if char.isalpha():
 
 			letter.append(char)
 
